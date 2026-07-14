@@ -1,22 +1,46 @@
+# IntelliJ / Android Studio
 *.iml
+.idea/
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
 
+# Gradle
 .gradle/
 /build/
 /app/build/
 
+# Local configuration
 local.properties
 
-.idea/
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-
-.DS_Store
-/captures
-.externalNativeBuild
-.cxx
-
+# Android build outputs
 *.apk
+*.aab
+output-metadata.json
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Android Studio
+captures/
+
+# Logs
+*.log
+*.hprof
+
+# Keystore
+*.jks
+*.keystore
+
+# Google Services
+google-services.json
+
+# macOS
+.DS_Store
