@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="hazentra_navy">#08182F</color>
+    <color name="hazentra_navy_medium">#102845</color>
+    <color name="hazentra_navy_light">#1A3B61</color>
+
+    <color name="hazentra_orange">#FF7433</color>
+    <color name="hazentra_orange_dark">#FF5A16</color>
+
+    <color name="hazentra_green">#4CDA8A</color>
+
+    <color name="hazentra_background">#0E1520</color>
+    <color name="hazentra_surface">#172231</color>
+    <color name="hazentra_white">#FFFFFF</color>
+
+    <color name="hazentra_text">#F2F6FA</color>
+    <color name="hazentra_muted">#AEB9C7</color>
+
+    <color name="hazentra_outline">#2C3949</color>
+    <color name="hazentra_divider">#263443</color>
+
+    <color name="hazentra_on_navy">#FFFFFF</color>
+    <color name="hazentra_on_orange">#FFFFFF</color>
+
+    <color name="hazentra_red">#EF5350</color>
+    <color name="hazentra_warning_green">#4CDA8A</color>
+    <color name="hazentra_warning_orange">#FFB547</color>
+
+</resources>

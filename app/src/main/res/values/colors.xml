@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Brand colors -->
+    <color name="hazentra_navy">#06162C</color>
+    <color name="hazentra_navy_medium">#09203D</color>
+    <color name="hazentra_navy_light">#12365F</color>
+
+    <color name="hazentra_orange">#FF681F</color>
+    <color name="hazentra_orange_dark">#F25216</color>
+
+    <color name="hazentra_green">#3BD47D</color>
+
+    <!-- Light-theme background and surfaces -->
+    <color name="hazentra_background">#F5F7FA</color>
+    <color name="hazentra_surface">#FFFFFF</color>
+    <color name="hazentra_white">#FFFFFF</color>
+
+    <!-- Light-theme text -->
+    <color name="hazentra_text">#152033</color>
+    <color name="hazentra_muted">#697386</color>
+
+    <!-- Borders and dividers -->
+    <color name="hazentra_outline">#E3E8EE</color>
+    <color name="hazentra_divider">#E8ECF1</color>
+
+    <!-- Fixed foreground colors -->
+    <color name="hazentra_on_navy">#FFFFFF</color>
+    <color name="hazentra_on_orange">#FFFFFF</color>
+
+    <!-- Hazard marker and status colors -->
+    <color name="hazentra_red">#E53935</color>
+    <color name="hazentra_warning_green">#2EAD62</color>
+    <color name="hazentra_warning_orange">#F59E0B</color>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style
+        name="Base.Theme.Hazentra"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Brand -->
+        <item name="colorPrimary">@color/hazentra_navy</item>
+        <item name="colorOnPrimary">@color/hazentra_on_navy</item>
+
+        <item name="colorSecondary">@color/hazentra_orange</item>
+        <item name="colorOnSecondary">@color/hazentra_on_orange</item>
+
+        <!-- Surface -->
+        <item name="colorSurface">@color/hazentra_surface</item>
+        <item name="colorOnSurface">@color/hazentra_text</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/hazentra_background</item>
+
+        <!-- Outline -->
+        <item name="colorOutline">@color/hazentra_outline</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/hazentra_navy</item>
+
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor">@color/hazentra_background</item>
+
+        <!-- White status bar icons -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/HazentraToolbar</item>
+
+    </style>
+
+    <style
+        name="HazentraToolbar"
+        parent="Widget.Material3.Toolbar">
+
+        <item name="titleTextColor">@color/hazentra_white</item>
+
+        <item name="subtitleTextColor">@color/hazentra_white</item>
+
+        <item name="navigationIconTint">@color/hazentra_white</item>
+
+    </style>
+
+    <style
+        name="Theme.Hazentra"
+        parent="Base.Theme.Hazentra"/>
+
+    <style
+        name="Theme.Hazentra.Starting"
+        parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">
+            @color/hazentra_navy
+        </item>
+
+        <item name="windowSplashScreenAnimatedIcon">
+            @drawable/splash_hazentra_icon
+        </item>
+
+        <item name="windowSplashScreenIconBackgroundColor">
+            @color/hazentra_navy
+        </item>
+
+        <item name="windowSplashScreenAnimationDuration">
+            700
+        </item>
+
+        <item name="postSplashScreenTheme">
+            @style/Theme.Hazentra
+        </item>
+
+    </style>
+
+</resources>

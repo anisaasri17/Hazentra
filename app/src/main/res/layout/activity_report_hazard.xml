@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hazentra_background"
+    android:fillViewport="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:id="@+id/reportHazardRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/reportToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/hazentra_navy"
+            android:elevation="0dp"
+            android:title="Report Hazard"
+            android:titleTextColor="@color/hazentra_on_navy"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:navigationIconTint="@color/hazentra_on_navy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="26dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit a hazard report"
+                android:textColor="@color/hazentra_text"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:lineSpacingExtra="2dp"
+                android:text="Enter the hazard coordinates manually or use your current GPS location."
+                android:textColor="@color/hazentra_muted"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reporter name"
+                app:boxBackgroundColor="@color/hazentra_surface"
+                app:boxStrokeColor="@color/hazentra_orange"
+                app:hintTextColor="@color/hazentra_muted">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reporterNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/hazentra_text"
+                    android:textColorHint="@color/hazentra_muted" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:text="Hazard category"
+                android:textColor="@color/hazentra_text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select category"
+                app:boxBackgroundColor="@color/hazentra_surface"
+                app:boxStrokeColor="@color/hazentra_orange"
+                app:hintTextColor="@color/hazentra_muted">
+
+                <AutoCompleteTextView
+                    android:id="@+id/categoryDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:textColor="@color/hazentra_text"
+                    android:textColorHint="@color/hazentra_muted" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Location name"
+                app:boxBackgroundColor="@color/hazentra_surface"
+                app:boxStrokeColor="@color/hazentra_orange"
+                app:hintTextColor="@color/hazentra_muted">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/locationNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="2"
+                    android:textColor="@color/hazentra_text"
+                    android:textColorHint="@color/hazentra_muted" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/latitudeInputLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:hint="Latitude"
+                    app:boxBackgroundColor="@color/hazentra_surface"
+                    app:boxStrokeColor="@color/hazentra_orange"
+                    app:helperText="Manual or GPS"
+                    app:helperTextTextColor="@color/hazentra_muted"
+                    app:hintTextColor="@color/hazentra_muted">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/latitudeInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:maxLines="1"
+                        android:textColor="@color/hazentra_text"
+                        android:textColorHint="@color/hazentra_muted" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/longitudeInputLayout"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:hint="Longitude"
+                    app:boxBackgroundColor="@color/hazentra_surface"
+                    app:boxStrokeColor="@color/hazentra_orange"
+                    app:helperText="Manual or GPS"
+                    app:helperTextTextColor="@color/hazentra_muted"
+                    app:hintTextColor="@color/hazentra_muted">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/longitudeInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:maxLines="1"
+                        android:textColor="@color/hazentra_text"
+                        android:textColorHint="@color/hazentra_muted" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/useCurrentLocationButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:text="Use My Current Location"
+                android:textAllCaps="false"
+                android:textColor="@color/hazentra_orange"
+                android:textStyle="bold"
+                app:backgroundTint="@color/hazentra_surface"
+                app:cornerRadius="14dp"
+                app:icon="@android:drawable/ic_menu_mylocation"
+                app:iconGravity="textStart"
+                app:iconTint="@color/hazentra_orange"
+                app:rippleColor="@color/hazentra_divider"
+                app:strokeColor="@color/hazentra_orange"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Hazard description"
+                app:boxBackgroundColor="@color/hazentra_surface"
+                app:boxStrokeColor="@color/hazentra_orange"
+                app:counterEnabled="true"
+                app:counterMaxLength="300"
+                app:counterTextColor="@color/hazentra_muted"
+                app:hintTextColor="@color/hazentra_muted">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descriptionInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:gravity="top|start"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="300"
+                    android:paddingTop="14dp"
+                    android:textColor="@color/hazentra_text"
+                    android:textColorHint="@color/hazentra_muted" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitHazardButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="Submit Hazard Report"
+                android:textAllCaps="false"
+                android:textColor="@color/hazentra_on_orange"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/hazentra_orange"
+                app:cornerRadius="14dp"
+                app:elevation="4dp"
+                app:icon="@android:drawable/ic_menu_send"
+                app:iconGravity="textStart"
+                app:iconTint="@color/hazentra_on_orange"
+                app:rippleColor="@color/hazentra_orange_dark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

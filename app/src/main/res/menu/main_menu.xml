@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Theme -->
+    <item
+        android:id="@+id/menuTheme"
+        android:icon="@drawable/ic_dark_mode"
+        android:title="Appearance"
+        app:showAsAction="always"/>
+
+    <!-- Statistics -->
+    <item
+        android:id="@+id/menuStatistics"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Statistics"
+        app:showAsAction="never"/>
+
+    <!-- Hazard Reports -->
+    <item
+        android:id="@+id/menuHazardReports"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Hazard Reports"
+        app:showAsAction="never"/>
+
+    <!-- About -->
+    <item
+        android:id="@+id/menuAbout"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="About Hazentra"
+        app:showAsAction="never"/>
+
+</menu>

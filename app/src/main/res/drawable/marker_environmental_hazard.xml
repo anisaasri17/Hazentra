@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Green circular background -->
+    <path
+        android:fillColor="#2EAD62"
+        android:pathData="M12,0A12,12 0,1 0,12,24A12,12 0,1 0,12,0" />
+
+    <!-- White leaf symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M6.05,8.05c-2.73,2.73 -2.73,7.17 0,9.9s7.17,2.73 9.9,0C19.43,14.47 20,4 20,4S9.53,4.57 6.05,8.05zM8,16c1.5,-3.5 4,-5.5 8,-7 -2.5,2 -4.5,4.5 -5.5,7H8z" />
+
+</vector>

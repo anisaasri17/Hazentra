@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style
+        name="Base.Theme.Hazentra"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/hazentra_navy</item>
+        <item name="colorOnPrimary">@color/hazentra_on_navy</item>
+
+        <item name="colorSecondary">@color/hazentra_orange</item>
+        <item name="colorOnSecondary">@color/hazentra_on_orange</item>
+
+        <item name="colorSurface">@color/hazentra_surface</item>
+        <item name="colorOnSurface">@color/hazentra_text</item>
+
+        <item name="android:colorBackground">
+            @color/hazentra_background
+        </item>
+
+        <item name="colorOutline">
+            @color/hazentra_outline
+        </item>
+
+        <item name="android:statusBarColor">
+            @color/hazentra_navy
+        </item>
+
+        <item name="android:navigationBarColor">
+            @color/hazentra_background
+        </item>
+
+        <item name="android:windowLightStatusBar">
+            false
+        </item>
+
+    </style>
+
+    <style
+        name="Theme.Hazentra"
+        parent="Base.Theme.Hazentra" />
+
+</resources>

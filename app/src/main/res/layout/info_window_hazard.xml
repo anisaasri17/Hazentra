@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_window_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/infoCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Road Hazard"
+        android:textColor="@color/hazentra_orange"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Location: UiTM Arau"
+        android:textColor="@color/hazentra_text"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="2dp"
+        android:maxLines="4"
+        android:text="Large pothole near the main entrance."
+        android:textColor="@color/hazentra_text"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/hazentra_divider" />
+
+    <TextView
+        android:id="@+id/infoReporter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reported by: User"
+        android:textColor="@color/hazentra_muted"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/infoDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Reported on: 13 Jul 2026"
+        android:textColor="@color/hazentra_muted"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/infoDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Device: Android"
+        android:textColor="@color/hazentra_muted"
+        android:textSize="11sp" />
+
+</LinearLayout>
