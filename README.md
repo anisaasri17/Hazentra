@@ -115,6 +115,12 @@ Repository: https://github.com/anisaasri17/Hazentra.git
 
 
 
+## Demonstration Video
+
+YouTube Video: https://youtu.be/GlTXMtvtyiM
+
+
+
 ## Copyright
 
 © 2026 Hazentra Development Team. All Rights Reserved.
